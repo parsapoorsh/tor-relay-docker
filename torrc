@@ -40,3 +40,6 @@ ControlPort 9051
 
 ## To become an exit relay change ExitRelay from 0 to 1
 ExitRelay 0
+
+# DO NOT CHANGE THIS LINE
+DataDirectory /var/lib/tor

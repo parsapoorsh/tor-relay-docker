@@ -18,3 +18,5 @@ services:
       - "[::1]:9051:9051"
     stop_grace_period: 1m
     restart: always
+    volumes:
+      - ./data:/var/lib/tor
