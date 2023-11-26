@@ -1,0 +1,16 @@
+version: "3"
+services:
+  tor-relay:
+    image: tor-relay
+    container_name: tor-relay
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    ports:
+      - 9001:9001
+      - 9030:9030
+      - 9050:9050
+      - 9051:9051
+    stop_grace_period: 1m
+    restart: always
