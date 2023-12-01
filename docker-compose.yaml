@@ -20,3 +20,4 @@ services:
     restart: always
     volumes:
       - ./data:/var/lib/tor
+      - ./torrc:/etc/tor/torrc:ro
